@@ -98,9 +98,7 @@ public class Main {
 
                         ArrayList<String> val = new ArrayList<>();
                         boolean started = false;
-//                        System.out.println(className.equals(value));
                         if (className.equals(value)) {
-                            // loop to >
                             int ending = index;
                             while (!String.valueOf(content.charAt(ending)).equals("<")) {
                                 if (started) {
@@ -123,11 +121,9 @@ public class Main {
                             String answer = bufferValue.toString();
                             CharacterName.add(answer);
                         }
-//                        System.out.println(index);
                     }
                 }
             }
-            // class
             index++;
         }
         return CharacterName;
